@@ -5,12 +5,24 @@
   
   <entry>
     <title>hexo博客搭建梳理</title>
-    <link href="/2021/12/27/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <url>/2021/12/27/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <link href="/2021/12/26/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2021/12/26/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
     
-    <content type="html"><![CDATA[<h2 id="起因："><a href="#起因：" class="headerlink" title="起因："></a>起因：</h2><pre><code>-之前装过几次博客，最后都因为没东西写而荒废，即便有东西写也都在csdn上写着，近来由于习得git和nodeJs，故想起这个博客都有用到这两种工具，便又重新拾起，这篇文章简单梳理下hexo的安装方法，以便自己后续查阅</code></pre><h2 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h2><pre><code>-安装nodeJs(用来生成hexo框架)-git(用来管理博客)-github或者gitee账号(各有优缺点，gitee速度快，但是需要开启git page, 开启的时候要提交身份证；github访问速度慢点)</code></pre><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><pre><code>首先使用nodeJs安装hexo框架`npm install hexo-cli g`安装好之后再创建博客文件夹，进行博客初始化，生成本地博客`hexo init`生成之后我们就可以使用下面的命令先在本地启动查看样式,后面进行博客更新都可以先在本地启动看看`hexo s`上面命令执行之后就可以在浏览器打开localhost:4000查看，启动失败大概率是端口被占用可以使用以下来进行更改端口号启动`hexo s -p 端口号`启动成功之后接下来我们就可以把博客部署到远端了部署到远端我们需要安装一个deployer的插件`npm install hexo-deployer-git --save`安装好之后接下来我们去GitHub或者gitee上操作首先创建一个仓库，仓库名一定要与你的账号名称一致，按照这样的格式填写xxxx.github.io **切记！！**创建好之后复制仓库链接，打开博客目录下的_config.yml文件拉到最底下如下填写，repo后面改为博客的仓库地址`deploy:type: &#39;git&#39;repo: git@github.com:xxxx/xxxx.github.io.gitbranch: master`修改完毕之后回到git使用`hexo g -d`将本地页面部署到远端地址栏输入 xxxx.github.io 打开则部署成功由于hexo博客没有后台管理，写的博客在source/_posts目录下每次写完再部署下即可更新，主题安装可以在github上搜索，一般都会有安装步骤</code></pre>]]></content>
+    <content type="html"><![CDATA[<h2 id="起因："><a href="#起因：" class="headerlink" title="起因："></a>起因：</h2><pre><code>-之前装过几次博客，最后都因为没东西写而荒废，即便有东西写也都在csdn上写着，近来由于习得git和nodeJs，故想起这个博客都有用到这两种工具，便又重新拾起，这篇文章简单梳理下hexo的安装方法，以便自己后续查阅</code></pre><h2 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h2><pre><code>- 安装nodeJs(用来生成hexo框架)- git(用来管理博客)- github或者gitee账号(各有优缺点，gitee速度快，但是需要开启git page, 开启的时候要提交身份证；github访问速度慢点)</code></pre><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><pre><code>首先使用nodeJs安装hexo框架<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs avrasm">npm install hexo-<span class="hljs-keyword">cli</span> g<br></code></pre></td></tr></table></figure>安装好之后再创建博客文件夹，进行博客初始化，生成本地博客<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs csharp">hexo <span class="hljs-keyword">init</span><br></code></pre></td></tr></table></figure>生成之后我们就可以使用下面的命令先在本地启动查看样式,后面进行博客更新都可以先在本地启动看看<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo s</span><br></code></pre></td></tr></table></figure>上面命令执行之后就可以在浏览器打开localhost:4000查看，启动失败大概率是端口被占用可以使用以下来进行更改端口号启动<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">hexo s -<span class="hljs-selector-tag">p</span> 端口号<br></code></pre></td></tr></table></figure>启动成功之后接下来我们就可以把博客部署到远端了部署到远端我们需要安装一个deployer的插件<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">npm install hexo-deployer-git <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure>安装好之后接下来我们去GitHub或者gitee上操作首先创建一个仓库，仓库名一定要与你的账号名称一致，按照这样的格式填写xxxx.github.io **切记！！**创建好之后复制仓库链接，打开博客目录下的_config.yml文件拉到最底下如下填写，repo后面改为博客的仓库地址<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs stylus">deploy:<br>type: <span class="hljs-string">&#x27;git&#x27;</span><br>repo: git@github<span class="hljs-selector-class">.com</span>:xxxx/xxxx<span class="hljs-selector-class">.github</span><span class="hljs-selector-class">.io</span><span class="hljs-selector-class">.git</span><br>branch: master<br></code></pre></td></tr></table></figure>修改完毕之后回到git使用`hexo g -d`将本地页面部署到远端地址栏输入 xxxx.github.io 打开则部署成功由于hexo博客没有后台管理，写的博客在source/_posts目录下每次写完再部署下即可更新，主题安装可以在github上搜索，一般都会有安装步骤</code></pre>]]></content>
     
     
+    <categories>
+      
+      <category>教程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo blog 记录</tag>
+      
+    </tags>
     
   </entry>
   
