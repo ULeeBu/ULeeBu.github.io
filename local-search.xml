@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>php与mySql笔记</title>
+    <link href="/2022/01/17/php%E4%B8%8EmySql%E7%AC%94%E8%AE%B0/"/>
+    <url>/2022/01/17/php%E4%B8%8EmySql%E7%AC%94%E8%AE%B0/</url>
+    
+    <content type="html"><![CDATA[<h3 id="php的介绍"><a href="#php的介绍" class="headerlink" title="php的介绍"></a>php的介绍</h3><pre><code>php必须在阿帕奇服务器下运行,将运行的代码放在www目录下.www目录也称为部署目录.访问时www目录就是本机ip地址.比如有一个index.html文件,访问时需要通过本机ip/index.html方式访问* php文件的作用  1.处理后端数据  2.像HTML一样渲染页面（几乎没用）* php的代码必须用&lt;?php                ?&gt;                包含起来* php支持中文的函数  header(&quot;Content-type:text/html;charset=utf-8&quot;);* php的每行语句必须加分号* echo等价于document.write* 注释的三种方式  // /**/ #* 环形地址代表本机IP:  127.0.0.1  localhost</code></pre><h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><pre><code>操作数据库用的是sql语句sql编辑器:用来编写sql语句的如何使用sql编辑器:一定要选中需要操作的库创建一个表</code></pre><p>create table 表名 (字段1,字段2…字段N);<br>create table student<br>(<br>    stu_id int,<br>    stu_name varchar(10),<br>    stu_gender char(5),<br>    stu_date date<br>)</p><p>增<br>insert into 表名 [字段1,字段2…字段N]<br>values (值1,值2…值n)<br>insert into student (stu_id,stu_name,stu_gender,stu_date)<br>values (3,”老王”,”M”,”2021-11-22”);<br>insert into student<br>values (4,”小明”,”M”,”2022-1-2”);</p><p>删表<br>drop table 表名;<br>drop table student;</p><p>删记录<br>delete from 表名;<br>delete from student;</p><p>实际情况是要根据条件删除某行记录<br>where子句可以实现条件的筛选<br>delete from student<br>where stu_id = 1;</p><p>AND 与<br>OR  或<br>delete from student<br>where stu_name = “老王”<br>AND stu_id = 3;</p><p>改<br>update 表名 set 字段1=值1,字段2=值2…<br>update student set stu_gender = “FM”;<br>update student set stu_name = “董文博”<br>where stu_id = 1;</p><p>查<br>select 字段1,字段2…from 表名;<br>select stu_id,stu_name from student;<br>select * from student;<br>select * from student<br>where stu_id = 1;</p><p>作业:<br>    1.所有的课堂案例及笔记<br>    2.先安装phpstudy<br>    3.预习(自学)php连接mysql进行增删查改<br>    4.预习(自学)cookie</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>学习笔记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>笔记 php mySql</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2021的流水账</title>
     <link href="/2021/12/31/2021%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
     <url>/2021/12/31/2021%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</url>

@@ -16,19 +16,39 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Lee&#39;world">
-<meta property="og:url" content="http://example.com/index.html">
+    <meta name="description" content="php的介绍php必须在阿帕奇服务器下运行,将运行的代码放在www目录下. www目录也称为部署目录. 访问时www目录就是本机ip地址.  比如有一个index.html文件,访问时需要通过 本机ip&#x2F;index.html方式访问  * php文件的作用   1.处理后端数据   2.像HTML一样渲染页面（几乎没用）  * php的代码必须用&lt;?php                 ?">
+<meta property="og:type" content="article">
+<meta property="og:title" content="php与mySql笔记">
+<meta property="og:url" content="http://example.com/2022/01/17/php%E4%B8%8EmySql%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Lee&#39;world">
+<meta property="og:description" content="php的介绍php必须在阿帕奇服务器下运行,将运行的代码放在www目录下. www目录也称为部署目录. 访问时www目录就是本机ip地址.  比如有一个index.html文件,访问时需要通过 本机ip&#x2F;index.html方式访问  * php文件的作用   1.处理后端数据   2.像HTML一样渲染页面（几乎没用）  * php的代码必须用&lt;?php                 ?">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-01-17T10:37:19.302Z">
+<meta property="article:modified_time" content="2022-01-17T10:36:58.897Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="笔记 php mySql">
 <meta name="twitter:card" content="summary_large_image">
   
   
-  <title>Lee&#39;world</title>
+  <title>php与mySql笔记 - Lee&#39;world</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -55,7 +75,7 @@
 
 
 <body>
-  <header style="height: 100vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -151,22 +171,52 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('https://www.bookbook.cc/images/bg-logo.svg') no-repeat center center;
+         style="background: url('/img/default.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Maybe it was enought that we met..">
+            <span class="h2" id="subtitle" title="php与mySql笔记">
               
             </span>
 
             
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-01-17 18:37" pubdate>
+        January 17, 2022 pm
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.1k 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      10 分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
           </div>
 
-          
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
           
         </div>
       </div>
@@ -175,152 +225,133 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          style=margin-top:0>
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+      
 
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/01/17/php%E4%B8%8EmySql%E7%AC%94%E8%AE%B0/" target="_self">
-          php与mySql笔记
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/01/17/php%E4%B8%8EmySql%E7%AC%94%E8%AE%B0/" target="_self">
-          
-          php的介绍php必须在阿帕奇服务器下运行,将运行的代码放在www目录下. www目录也称为部署目录. 访问时www目录就是本机ip地址.  比如有一个index.html文件,访问时需要通过 本机ip&#x2F;index.html方式访问  * php文件的作用   1.处理后端数据   2.像HTML一样渲染页面（几乎没用）  * php的代码必须用&lt;?php                 ?
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-01-17 18:37" pubdate>
-              2022-01-17
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">php与mySql笔记</h1>
             
-              <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E7%AC%94%E8%AE%B0-php-mySql/">笔记 php mySql</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
+            <div class="markdown-body">
+              <h3 id="php的介绍"><a href="#php的介绍" class="headerlink" title="php的介绍"></a>php的介绍</h3><pre><code>php必须在阿帕奇服务器下运行,将运行的代码放在www目录下.
+www目录也称为部署目录.
+访问时www目录就是本机ip地址.
 
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/12/31/2021%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/" target="_self">
-          2021的流水账
-        </a>
-      </h1>
+比如有一个index.html文件,访问时需要通过
+本机ip/index.html方式访问
 
-      <p class="index-excerpt">
-        <a href="/2021/12/31/2021%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/" target="_self">
-          
-          一支烟，一瓶酒，一顿火锅，就这样结束了潦草的2021年，依稀还记得20年考完研离开创新花园的狼狈，以及对爱情的一丝丝残念的不舍，匆忙的搬到了九合院，一个人开始了在独居的日子，刚开始打算在金融行业大干一番，最好勉强在熙地港那家所谓的港澳投顾公司当了一个月打电话推销的牛马，草草收场，期间约到了杨欣欣，也至此斩断了最后的一丝幻想，毕竟智者不入爱河，愚者爱中迷失，后面回到了家里，待到了年后的3月回到了九
-        </a>
-      </p>
+* php文件的作用
+  1.处理后端数据
+  2.像HTML一样渲染页面（几乎没用）
 
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-12-31 23:59" pubdate>
-              2021-12-31
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
+* php的代码必须用&lt;?php
+                ?&gt;
+                包含起来
+* php支持中文的函数
+  header(&quot;Content-type:text/html;charset=utf-8&quot;);
 
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/12/26/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_self">
-          hexo博客搭建梳理
-        </a>
-      </h1>
+* php的每行语句必须加分号
 
-      <p class="index-excerpt">
-        <a href="/2021/12/26/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_self">
-          
-          起因：-之前装过几次博客，最后都因为没东西写而荒废，即便有东西写也都在csdn上写着， 近来由于习得git和nodeJs，故想起这个博客都有用到这两种工具，便又重新拾起， 这篇文章简单梳理下hexo的安装方法，以便自己后续查阅  搭建环境- 安装nodeJs(用来生成hexo框架) - git(用来管理博客) - github或者gitee账号(各有优缺点，gitee速度快，但是需要开启git p
-        </a>
-      </p>
+* echo等价于document.write
 
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-12-26 23:21" pubdate>
-              2021-12-26
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/hexo-blog-%E8%AE%B0%E5%BD%95/">hexo blog 记录</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
+* 注释的三种方式
+  // /**/ #
 
+* 环形地址代表本机IP:
+  127.0.0.1
+  localhost
+</code></pre>
+<h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><pre><code>操作数据库用的是sql语句
 
+sql编辑器:用来编写sql语句的
 
+如何使用sql编辑器:一定要选中需要操作的库
 
+创建一个表
+</code></pre>
+<p>create table 表名 (字段1,字段2…字段N);<br>create table student<br>(<br>    stu_id int,<br>    stu_name varchar(10),<br>    stu_gender char(5),<br>    stu_date date<br>)</p>
+<p>增<br>insert into 表名 [字段1,字段2…字段N]<br>values (值1,值2…值n)<br>insert into student (stu_id,stu_name,stu_gender,stu_date)<br>values (3,”老王”,”M”,”2021-11-22”);<br>insert into student<br>values (4,”小明”,”M”,”2022-1-2”);</p>
+<p>删表<br>drop table 表名;<br>drop table student;</p>
+<p>删记录<br>delete from 表名;<br>delete from student;</p>
+<p>实际情况是要根据条件删除某行记录<br>where子句可以实现条件的筛选<br>delete from student<br>where stu_id = 1;</p>
+<p>AND 与<br>OR  或<br>delete from student<br>where stu_name = “老王”<br>AND stu_id = 3;</p>
+<p>改<br>update 表名 set 字段1=值1,字段2=值2…<br>update student set stu_gender = “FM”;<br>update student set stu_name = “董文博”<br>where stu_id = 1;</p>
+<p>查<br>select 字段1,字段2…from 表名;<br>select stu_id,stu_name from student;<br>select * from student;<br>select * from student<br>where stu_id = 1;</p>
+<p>作业:<br>    1.所有的课堂案例及笔记<br>    2.先安装phpstudy<br>    3.预习(自学)php连接mysql进行增删查改<br>    4.预习(自学)cookie</p>
 
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%AC%94%E8%AE%B0-php-mySql/">笔记 php mySql</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/12/31/2021%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/">
+                        <span class="hidden-mobile">2021的流水账</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -403,6 +434,19 @@
   
 
 
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
 
 
 
