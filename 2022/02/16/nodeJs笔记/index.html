@@ -16,21 +16,21 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="php的介绍php必须在阿帕奇服务器下运行,将运行的代码放在www目录下. www目录也称为部署目录. 访问时www目录就是本机ip地址.  比如有一个index.html文件,访问时需要通过 本机ip&#x2F;index.html方式访问  * php文件的作用   1.处理后端数据   2.像HTML一样渲染页面（几乎没用）  * php的代码必须用&lt;?php                 ?">
+    <meta name="description" content="node.js是什么node.js是一个js运行时环境+大量的新API node.js &#x3D; 谷歌V8引擎 + 大量新API 使用nodejs来编写服务端代码  node.js搭建服务器的好处 前端人员熟悉JS语法 效率非常高，是普通服务器的10倍 敏捷开发   node的安装http:&#x2F;&#x2F;nodejs.cn 下载-&gt;windows 64位.msi 打开控制台:windows键+R-&gt;c">
 <meta property="og:type" content="article">
-<meta property="og:title" content="php与mySql笔记">
-<meta property="og:url" content="http://example.com/2022/01/17/php%E4%B8%8EmySql%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:title" content="nodeJs笔记">
+<meta property="og:url" content="http://example.com/2022/02/16/nodeJs%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Lee&#39;world">
-<meta property="og:description" content="php的介绍php必须在阿帕奇服务器下运行,将运行的代码放在www目录下. www目录也称为部署目录. 访问时www目录就是本机ip地址.  比如有一个index.html文件,访问时需要通过 本机ip&#x2F;index.html方式访问  * php文件的作用   1.处理后端数据   2.像HTML一样渲染页面（几乎没用）  * php的代码必须用&lt;?php                 ?">
+<meta property="og:description" content="node.js是什么node.js是一个js运行时环境+大量的新API node.js &#x3D; 谷歌V8引擎 + 大量新API 使用nodejs来编写服务端代码  node.js搭建服务器的好处 前端人员熟悉JS语法 效率非常高，是普通服务器的10倍 敏捷开发   node的安装http:&#x2F;&#x2F;nodejs.cn 下载-&gt;windows 64位.msi 打开控制台:windows键+R-&gt;c">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-01-17T10:37:19.302Z">
-<meta property="article:modified_time" content="2022-01-17T10:36:58.897Z">
+<meta property="article:published_time" content="2022-02-16T12:36:55.916Z">
+<meta property="article:modified_time" content="2022-02-16T12:42:32.954Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="笔记 php mySql">
+<meta property="article:tag" content="nodeJs">
 <meta name="twitter:card" content="summary_large_image">
   
   
-  <title>php与mySql笔记 - Lee&#39;world</title>
+  <title>nodeJs笔记 - Lee&#39;world</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -176,7 +176,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="php与mySql笔记">
+            <span class="h2" id="subtitle" title="nodeJs笔记">
               
             </span>
 
@@ -186,8 +186,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-01-17 18:37" pubdate>
-        January 17, 2022 pm
+      <time datetime="2022-02-16 20:36" pubdate>
+        February 16, 2022 pm
       </time>
     </span>
   
@@ -197,7 +197,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.1k 字
+      2.2k 字
     </span>
   
 
@@ -206,7 +206,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      10 分钟
+      19 分钟
     </span>
   
 
@@ -235,54 +235,137 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">php与mySql笔记</h1>
+            <h1 style="display: none">nodeJs笔记</h1>
             
             <div class="markdown-body">
-              <h3 id="php的介绍"><a href="#php的介绍" class="headerlink" title="php的介绍"></a>php的介绍</h3><pre><code>php必须在阿帕奇服务器下运行,将运行的代码放在www目录下.
-www目录也称为部署目录.
-访问时www目录就是本机ip地址.
+              <h3 id="node-js是什么"><a href="#node-js是什么" class="headerlink" title="node.js是什么"></a>node.js是什么</h3><pre><code>node.js是一个js运行时环境+大量的新API
+node.js = 谷歌V8引擎 + 大量新API
+使用nodejs来编写服务端代码
 
-比如有一个index.html文件,访问时需要通过
-本机ip/index.html方式访问
-
-* php文件的作用
-  1.处理后端数据
-  2.像HTML一样渲染页面（几乎没用）
-
-* php的代码必须用&lt;?php
-                ?&gt;
-                包含起来
-* php支持中文的函数
-  header(&quot;Content-type:text/html;charset=utf-8&quot;);
-
-* php的每行语句必须加分号
-
-* echo等价于document.write
-
-* 注释的三种方式
-  // /**/ #
-
-* 环形地址代表本机IP:
-  127.0.0.1
-  localhost
+node.js搭建服务器的好处
+前端人员熟悉JS语法
+效率非常高，是普通服务器的10倍
+敏捷开发 
 </code></pre>
-<h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><pre><code>操作数据库用的是sql语句
-
-sql编辑器:用来编写sql语句的
-
-如何使用sql编辑器:一定要选中需要操作的库
-
-创建一个表
+<h3 id="node的安装"><a href="#node的安装" class="headerlink" title="node的安装"></a>node的安装</h3><pre><code>http://nodejs.cn
+下载-&gt;windows 64位.msi
+打开控制台:windows键+R-&gt;cmd
+node -v 目的是为了验证node有没有安装,并不是为了关注版本号
 </code></pre>
-<p>create table 表名 (字段1,字段2…字段N);<br>create table student<br>(<br>    stu_id int,<br>    stu_name varchar(10),<br>    stu_gender char(5),<br>    stu_date date<br>)</p>
-<p>增<br>insert into 表名 [字段1,字段2…字段N]<br>values (值1,值2…值n)<br>insert into student (stu_id,stu_name,stu_gender,stu_date)<br>values (3,”老王”,”M”,”2021-11-22”);<br>insert into student<br>values (4,”小明”,”M”,”2022-1-2”);</p>
-<p>删表<br>drop table 表名;<br>drop table student;</p>
-<p>删记录<br>delete from 表名;<br>delete from student;</p>
-<p>实际情况是要根据条件删除某行记录<br>where子句可以实现条件的筛选<br>delete from student<br>where stu_id = 1;</p>
-<p>AND 与<br>OR  或<br>delete from student<br>where stu_name = “老王”<br>AND stu_id = 3;</p>
-<p>改<br>update 表名 set 字段1=值1,字段2=值2…<br>update student set stu_gender = “FM”;<br>update student set stu_name = “董文博”<br>where stu_id = 1;</p>
-<p>查<br>select 字段1,字段2…from 表名;<br>select stu_id,stu_name from student;<br>select * from student;<br>select * from student<br>where stu_id = 1;</p>
-<p>作业:<br>    1.所有的课堂案例及笔记<br>    2.先安装phpstudy<br>    3.预习(自学)php连接mysql进行增删查改<br>    4.预习(自学)cookie</p>
+<h3 id="第一个nodejs程序"><a href="#第一个nodejs程序" class="headerlink" title="第一个nodejs程序"></a>第一个nodejs程序</h3><pre><code>node 文件名
+注意:请将文件的目录切换至操作目录
+
+node搭建服务器
+
+//创建可一个http对象
+const http = require(&#39;http&#39;);
+//创建一个服务器对象
+http.createServer(function(req, res) &#123;
+//设置响应头,支持中文,将响应的字符串以HTML的形式解析
+res.writeHead(200, &#123; &quot;Content-type&quot;: &quot;text/html;charset=utf-8&quot; &#125;);
+res.write(&quot;hahaha&quot;);
+res.write(&quot;xixixi&quot;);
+//end([响应给用户的内容]);
+res.end(&quot;&lt;strong&gt;王力宏&lt;/strong&gt;&quot;);
+//设置端口号 0~65535   8500以上
+</code></pre>
+<p>}).listen(8888);</p>
+<h3 id="nodejs中的模块化"><a href="#nodejs中的模块化" class="headerlink" title="nodejs中的模块化"></a>nodejs中的模块化</h3><pre><code>以前js文件相互交互是通过HTML文件实现的
+
+nodeJS文件导入和导出的规则
+
+模块:在node中,所有的js文件都被称为模块（本质和类是差不多的）
+模块的分类
+1.系统模块 http,fs
+2.自定义模块
+3.第三方模块 (通过软件商城下载的模块)
+
+CommonJS:node实现js文件引入js文件的规则
+导入:
+    const myModule = require(模块名称);
+导出:
+    可出现多次
+    exports.属性名 = 属性
+
+    只能出现一次
+    module.exports = &#123;
+        属性1:值1,
+        属性2:值2...
+    &#125;
+
+//模块的组合
+module.exports = &#123;
+    key1: myModule,
+    fun3() &#123;
+        console.log(&quot;fun3&quot;);
+    &#125;
+&#125;
+
+node_modules：
+存放在该文件夹的模块,在导入的时候不需要添加路径
+
+ES6的模块化:前端js文件引js文件的语法规则
+导出:
+    方法1
+    export let a = 666;
+    export function fun(a, b) &#123;
+        return a + b;
+    &#125;
+    方法2
+    let a = 888;
+    let b = 999;
+
+    function fun() &#123;
+        console.log(&quot;fun&quot;);
+    &#125;
+
+    export default &#123;
+        a,
+        fun
+    &#125;
+
+导入:
+    方法1
+    import &#123; a, fun &#125; from &quot;./3.a.js&quot;;
+
+    方法2
+    import myModule from &quot;./3.a.js&quot;;
+    console.log(myModule.a);
+    myModule.fun();
+
+最后需要在html文件中,添加type=&quot;module&quot;属性
+</code></pre>
+<h3 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h3><pre><code>包管理工具:用来下载第三方模块
+
+目标:会使用npm下载第三方模块
+
+1.下载模块
+npm install 模块名称
+npm i 模块名称
+
+2.卸载模块
+npm uninstall 模块名称
+
+3.查看node_modules安装的包
+npm list
+
+4.查看安装的某个包的详细信息
+npm info 模块名称
+
+npm install -g  nodemon 自动重启工具
+</code></pre>
+<h3 id="fs"><a href="#fs" class="headerlink" title="fs"></a>fs</h3><pre><code>fs:fileSystem
+针对于文件内容的读写
+
+const fs = require(&#39;fs&#39;);
+</code></pre>
+<p>//读文件<br>// fs.readFile(路径, (err, data) =&gt; {</p>
+<p>// });<br>// 异步<br>// fs.readFile(“5.txt”, (err, data) =&gt; {<br>//     if (err) {<br>//         console.log(“文件读取失败”);<br>//     } else {<br>//         console.log(data.toString());<br>//     }<br>// });</p>
+<p>// fs.writeFile(文件路径, 写入的内容, [追加还是覆盖], 回调函数);<br>// 如果源文件路径存在,则删除源文件，生成新文件，添加内容<br>// fs.writeFile(“5.txt”, “吴亦凡王力宏”, () =&gt; {<br>//     console.log(“写入数据成功”);<br>// });</p>
+<p>// fs.writeFile(“5.txt”, “薇娅霍尊”, { flag: “w” }, () =&gt; {<br>//     console.log(“写入数据成功”);<br>// });</p>
+<p>//如果路径不存在，则直接创建新文件<br>// fs.writeFile(“test.txt”, “罗志祥钱枫”, () =&gt; {<br>//     console.log(“写入数据成功”);<br>// });</p>
+<p>// fs.mkdir(“myDir”, () =&gt; {});<br>// fs.rmdir(“myDir”, () =&gt; {});</p>
+<p>fs.unlink(“test.txt”, () =&gt; {});</p>
 
             </div>
             <hr>
@@ -300,7 +383,7 @@ sql编辑器:用来编写sql语句的
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E7%AC%94%E8%AE%B0-php-mySql/">笔记 php mySql</a>
+                      <a class="hover-with-bg" href="/tags/nodeJs/">nodeJs</a>
                     
                   </div>
                 
@@ -317,18 +400,12 @@ sql编辑器:用来编写sql语句的
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/02/16/nodeJs%E7%AC%94%E8%AE%B0/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">nodeJs笔记</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/12/31/2021%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/">
-                        <span class="hidden-mobile">2021的流水账</span>
+                      <a href="/2022/01/17/php%E4%B8%8EmySql%E7%AC%94%E8%AE%B0/">
+                        <span class="hidden-mobile">php与mySql笔记</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
